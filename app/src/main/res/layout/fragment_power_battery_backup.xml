@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".fragment.PowerBatteryBackupFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="No of Records :"
+            android:id="@+id/tv_count_previous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp" />
+
+        <TextView
+            android:id="@+id/tv_ques1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Are there existing AC-mains? If yes, note following:" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Voltage (V)" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Phases" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Frequency (Hz)" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Main circuit breaker size (A)" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:textSize="12dp"
+                android:id="@+id/edt_ques5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_ques6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Are the AC-mains provided with Over Voltage Protection (OVP)?If yes indicate type of OVP: "   />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_ques7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Is there an existing AC-mains back up/ Genset?" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Is there an existing AC distribution? " />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="If yes, Note details of AC circuit breakers (CBs) as below:" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No. and Capacity of used CBs" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No. and Capacity of spare CBs" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No. and Capacity of Required CB" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques13"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Is there an existing air-conditioning?" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Photograph of AC-PDB taken?" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Is there an existing battery back-up for RBS? If yes, note following:" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_ques16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Type/Model no: " />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_ques17"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Battery Type/Capacity" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques18"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Photograph of BBS taken?" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques19"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Other suggestions/Comments for other actions/preparations (if any):" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Is a new backup system required to be installed? " />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques21"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Number of rectifier modules in existing power system" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="How many rectifier modules can be added" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques23"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Number of Battery strings installed" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques24"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Number of Battery blocks installed" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques25"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Space available for how many Battery strings in existing power system:" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques26"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Is there existing DC distribution? If yes, Note details about DC circuit breaker in the table below" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques27"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No. and Capacity of used CBs" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques28"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No. and Capacity of spare CBs:" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques29"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Photograph of DC-PDB taken? " />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_ques30"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Suggestions/Comments for other actions/preparations (if any): " />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_ques30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radioQues30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/ansYes" />
+
+                <RadioButton
+                    android:id="@+id/no30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ansNo" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/margin_large"
+            android:layout_gravity="bottom|center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:layout_gravity="bottom|center"
+                android:id="@+id/btn_save"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shadow_bg"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_weight="1"
+                android:background="@drawable/button_shadow_bg"
+                android:text="Next"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_count_after"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

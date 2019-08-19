@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    <ScrollView
+         android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:text="No of Records :"
+            android:id="@+id/tv_count_previous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp" />
+
+        <TextView
+            android:layout_margin="5dp"
+            android:text="Lat Log :"
+            android:layout_gravity="left"
+            android:id="@+id/lat_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_margin="5dp"
+            android:text="Date"
+            android:layout_gravity="right"
+            android:id="@+id/tvdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_margin="@dimen/margin_small"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Location :"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_weight="2"
+                android:layout_margin="5dp"
+                android:background="@drawable/edt_border"
+                android:id="@+id/edt_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_margin="@dimen/margin_small"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_customer"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Site ID :"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_weight="2"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                android:background="@drawable/edt_border"
+                android:id="@+id/edt_sitenumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="@dimen/margin_small"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+<!--
+            <TextView
+                android:id="@+id/tv_ericsson"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Ericsson :"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />-->
+            <TextView
+
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Lat :"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_weight="2"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                android:background="@drawable/edt_border"
+                android:id="@+id/edt_lat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Long :"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_weight="2"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                android:background="@drawable/edt_border"
+                android:id="@+id/edt_long"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="@dimen/margin_small"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_circle"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Site Name :"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_weight="2"
+                android:layout_margin="5dp"
+                android:background="@drawable/edt_border"
+                android:id="@+id/edt_sitename"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_margin="@dimen/margin_small"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+<!--            <TextView
+                android:id="@+id/tv_circlestate"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="State :"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />-->
+
+            <TextView
+                android:id="@+id/tv_technology"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Site Type :"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_weight="2"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                android:background="@drawable/edt_border"
+                android:id="@+id/edt_sitetype"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_margin="@dimen/margin_small"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_technologytype"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Date :"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:layout_weight="2"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                android:background="@drawable/edt_border"
+                android:id="@+id/edtsiteidentidate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_margin="@dimen/margin_small"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+         <!--   <TextView
+                android:id="@+id/tv_technology_scf"
+                android:layout_gravity="center"
+                android:layout_weight="1.2"
+                android:text="Technology SCF :"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />-->
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Remark :"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_weight="2"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                android:background="@drawable/edt_border"
+                android:id="@+id/edt_remark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_count_after"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp" />
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <Button
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/margin_small"
+        android:layout_gravity="bottom|center"
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shadow_bg"
+        android:text="Save" />
+        <Button
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/margin_small"
+        android:layout_gravity="bottom|center"
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shadow_bg"
+        android:text="Next" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
